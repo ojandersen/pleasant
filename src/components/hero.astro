@@ -1,0 +1,93 @@
+---
+const {} = Astro.props;
+---
+
+<img src="/images/hero3.png" alt="hero" />
+
+<h2>Skil dig ud fra de andre på gaden</h2>
+
+<sektion class="hero__content">
+  <p class="hero_tekst">Pleasant lancerer en ny kollektion, der garanterer, at du skiller dig ud fra mængden. Hver style er upcyclet af glemte tekstiler og bærer på sin helt egen historie.</p>
+
+  <p class="hero_tekst">Vi ønsker at give hvert item nyt liv ved at lade det blive en del af din historie. Bliv one of a kind med vores nye, helt unikke styles, der afspejler præcis, hvem du er.</p>
+</sektion>
+
+<sektion class="billeder_3">
+  <img src="/images/vaskeri.jpeg" alt="hero" class="vaskeri" />
+  <div>
+    <img src="/images/drenge.jpg" alt="hero" class="drenge" />
+    <button>Se Kollektion</button>
+  </div>
+  <img src="/images/henrikcap.jpg" alt="hero" class="henrikcap" />
+</sektion>
+
+<img src="/images/citat.png" alt="citat" />
+
+<style>
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: left;
+    padding: 2rem;
+    color: #333;
+    font-family:;
+  }
+  .hero__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .hero_tekst {
+    font-size: 1.2rem;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    padding: 1rem;
+    max-width: 50ch;
+  }
+
+  .billeder_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .vaskeri {
+    width: 70%;
+    height: 65%;
+    object-fit: cover;
+    border: 5px solid #f5b980;
+  }
+  .drenge {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border: 5px solid #a2412e;
+  }
+  .henrikcap {
+    width: 70%;
+    height: 65%;
+    object-fit: cover;
+    border: 5px solid #88beac;
+  }
+  button {
+    color: #a2412e;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: #88beac;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+</style>
